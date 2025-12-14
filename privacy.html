@@ -1,38 +1,159 @@
+<!-- =========================
+     privacy.html
+     Política de privacidad — AutoMenú
+     ========================= -->
 <!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Política de privacidad — AutoMenú</title>
+  <meta name="robots" content="noindex" />
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.6}
-    h1,h2{line-height:1.2}
-    .muted{color:#666}
+    :root { color-scheme: light dark; }
+    body{
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 16px;
+      line-height: 1.7;
+    }
+    h1,h2{ line-height: 1.2; }
+    h1{ margin-bottom: 6px; }
+    .muted{ color: #666; }
+    a{ color: inherit; }
+    nav{
+      margin: 18px 0 26px;
+      padding: 12px 14px;
+      border: 1px solid rgba(127,127,127,.35);
+      border-radius: 12px;
+    }
+    nav a{ margin-right: 12px; text-decoration: none; border-bottom: 1px solid currentColor; }
+    hr{ border: none; border-top: 1px solid rgba(127,127,127,.25); margin: 26px 0; }
+    ul{ padding-left: 18px; }
+    .note{
+      padding: 12px 14px;
+      border-left: 4px solid rgba(127,127,127,.6);
+      background: rgba(127,127,127,.08);
+      border-radius: 10px;
+      margin: 14px 0;
+    }
   </style>
 </head>
 <body>
   <h1>Política de privacidad</h1>
-  <p class="muted">Última actualización: DD/MM/AAAA</p>
+  <p class="muted"><strong>AutoMenú</strong></p>
+  <p class="muted"><strong>Última actualización:</strong> 14/12/2025</p>
 
-  <h2>1. Responsable</h2>
-  <p>...</p>
+  <nav aria-label="Índice">
+    <a href="index.html">Inicio</a>
+    <a href="#responsable">1. Responsable</a>
+    <a href="#datos">2. Datos</a>
+    <a href="#finalidad">3. Finalidad</a>
+    <a href="#terceros">4. Terceros</a>
+    <a href="#publicidad">5. Publicidad</a>
+    <a href="#privacidad-contenido">6. Contenido</a>
+    <a href="#conservacion">7. Conservación</a>
+    <a href="#derechos">8. Derechos</a>
+    <a href="#seguridad">9. Seguridad</a>
+    <a href="#cambios">10. Cambios</a>
+  </nav>
 
-  <h2>2. Datos que recopilamos</h2>
-  <p>...</p>
+  <h2 id="responsable">1. Responsable del tratamiento</h2>
+  <p><strong>Responsable:</strong> Jorge Blanco Pacheco</p>
+  <p><strong>Correo electrónico de contacto:</strong> ayuda.automenu@gmail.com</p>
+  <p><strong>Ámbito:</strong> España / Unión Europea</p>
 
-  <h2>3. Finalidades</h2>
-  <p>...</p>
+  <h2 id="datos">2. Datos personales que se recopilan</h2>
+  <p>La aplicación AutoMenú puede recopilar los siguientes datos, según el uso que haga el usuario:</p>
+  <ul>
+    <li>Dirección de correo electrónico (para la creación y gestión de la cuenta).</li>
+    <li>Identificador de usuario (UID) asignado por Firebase.</li>
+    <li>Recetas, menús y configuraciones creadas por el usuario.</li>
+    <li>Imágenes subidas por el usuario (por ejemplo, fotos de recetas).</li>
+    <li>Preferencias de uso de la aplicación.</li>
+    <li>Datos técnicos y de diagnóstico (información del dispositivo, registros de errores).</li>
+  </ul>
+  <p>En ningún caso se recopilan datos bancarios o de pago directamente por la aplicación.</p>
 
-  <h2>4. Terceros (Firebase, AdMob)</h2>
-  <p>...</p>
+  <h2 id="finalidad">3. Finalidad del tratamiento</h2>
+  <p>Los datos se utilizan exclusivamente para:</p>
+  <ul>
+    <li>Permitir el registro, inicio y cierre de sesión de usuarios.</li>
+    <li>Guardar y sincronizar recetas, menús y configuraciones personales.</li>
+    <li>Almacenar imágenes asociadas a las recetas.</li>
+    <li>Mejorar el rendimiento, estabilidad y experiencia de uso de la aplicación.</li>
+    <li>Mostrar anuncios en la versión gratuita.</li>
+    <li>Gestionar la suscripción que elimina la publicidad.</li>
+  </ul>
 
-  <h2>5. Conservación</h2>
-  <p>...</p>
+  <h2 id="terceros">4. Servicios de terceros</h2>
+  <p>AutoMenú utiliza servicios proporcionados por terceros, todos ellos gestionados por Google:</p>
+  <ul>
+    <li><strong>Firebase Authentication</strong>: gestión de usuarios.</li>
+    <li><strong>Firebase Firestore Database</strong>: almacenamiento de datos.</li>
+    <li><strong>Firebase Storage</strong>: almacenamiento de imágenes.</li>
+    <li><strong>Firebase Analytics</strong>: análisis de uso de la aplicación.</li>
+    <li><strong>Firebase Crashlytics</strong>: detección y análisis de errores.</li>
+    <li><strong>Firebase App Check</strong>: protección frente a accesos no autorizados.</li>
+    <li><strong>Google AdMob</strong>: visualización de anuncios.</li>
+    <li><strong>Google Play Billing</strong>: gestión de suscripciones y pagos.</li>
+  </ul>
+  <p>
+    Estos servicios pueden recopilar datos técnicos y de uso conforme a sus propias políticas de privacidad.
+    AutoMenú no controla ni es responsable del tratamiento realizado directamente por dichos servicios.
+  </p>
 
-  <h2>6. Derechos RGPD</h2>
-  <p>...</p>
+  <h2 id="publicidad">5. Publicidad</h2>
+  <p>La aplicación muestra anuncios mediante Google AdMob en su versión gratuita.</p>
+  <p>El usuario puede optar por una <strong>suscripción de pago</strong> que elimina completamente la publicidad.</p>
+  <p>Los anuncios pueden ser personalizados o no personalizados, según la configuración del dispositivo y la normativa aplicable.</p>
 
-  <h2>7. Contacto</h2>
-  <p>...</p>
+  <h2 id="privacidad-contenido">6. Privacidad del contenido del usuario</h2>
+  <p>
+    Todas las recetas, imágenes y datos creados por el usuario son <strong>privados</strong> y
+    <strong>solo accesibles por su propietario</strong>.
+  </p>
+  <p>La aplicación <strong>no comparte contenido entre usuarios</strong> ni lo hace público sin una acción explícita del usuario.</p>
+  <p class="note">
+    En el futuro podrían habilitarse opciones voluntarias para compartir contenido (por ejemplo, recetas públicas),
+    lo cual sería informado debidamente.
+  </p>
+
+  <h2 id="conservacion">7. Conservación de los datos</h2>
+  <p>Los datos personales se conservarán mientras la cuenta del usuario esté activa.</p>
+  <p>
+    El usuario puede <strong>eliminar su cuenta y sus datos directamente desde la aplicación</strong>, lo que conlleva la eliminación
+    de la información asociada en los sistemas de AutoMenú.
+  </p>
+
+  <h2 id="derechos">8. Derechos del usuario</h2>
+  <p>De acuerdo con el Reglamento General de Protección de Datos (RGPD), el usuario tiene derecho a:</p>
+  <ul>
+    <li>Acceder a sus datos personales.</li>
+    <li>Rectificar datos inexactos.</li>
+    <li>Solicitar la eliminación de sus datos.</li>
+    <li>Solicitar la limitación del tratamiento.</li>
+    <li>Oponerse al tratamiento de sus datos en determinados supuestos.</li>
+  </ul>
+  <p>
+    El ejercicio de algunos de estos derechos puede implicar la imposibilidad de prestar el servicio, ya que determinados datos
+    son necesarios para el funcionamiento de la aplicación.
+  </p>
+  <p>
+    En tales casos, el responsable podrá proceder a la eliminación de la cuenta del usuario y de los datos asociados.
+  </p>
+  <p>Para ejercer estos derechos, el usuario puede contactar a través de: <strong>ayuda.automenu@gmail.com</strong></p>
+
+  <h2 id="seguridad">9. Seguridad</h2>
+  <p>Los datos se transmiten de forma segura mediante conexiones cifradas (HTTPS).</p>
+  <p>Se aplican medidas técnicas y organizativas razonables para proteger la información del usuario.</p>
+
+  <h2 id="cambios">10. Cambios en esta política</h2>
+  <p>Esta política puede actualizarse para reflejar cambios en la aplicación o en la normativa vigente.</p>
+  <p>Las modificaciones se publicarán en esta misma página.</p>
+
+  <hr />
+  <p class="muted"><a href="index.html">Volver a Inicio</a></p>
 </body>
 </html>
