@@ -1,38 +1,115 @@
+<!-- =========================
+     terms.html
+     Términos y condiciones — AutoMenú
+     ========================= -->
 <!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Términos y condiciones — AutoMenú</title>
+  <meta name="robots" content="noindex" />
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.6}
-    h1,h2{line-height:1.2}
-    .muted{color:#666}
+    :root { color-scheme: light dark; }
+    body{
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 16px;
+      line-height: 1.7;
+    }
+    h1,h2{ line-height: 1.2; }
+    h1{ margin-bottom: 6px; }
+    .muted{ color: #666; }
+    a{ color: inherit; }
+    nav{
+      margin: 18px 0 26px;
+      padding: 12px 14px;
+      border: 1px solid rgba(127,127,127,.35);
+      border-radius: 12px;
+    }
+    nav a{ margin-right: 12px; text-decoration: none; border-bottom: 1px solid currentColor; }
+    hr{ border: none; border-top: 1px solid rgba(127,127,127,.25); margin: 26px 0; }
+    ul{ padding-left: 18px; }
+    .note{
+      padding: 12px 14px;
+      border-left: 4px solid rgba(127,127,127,.6);
+      background: rgba(127,127,127,.08);
+      border-radius: 10px;
+      margin: 14px 0;
+    }
   </style>
 </head>
 <body>
   <h1>Términos y condiciones</h1>
-  <p class="muted">Última actualización: DD/MM/AAAA</p>
+  <p class="muted"><strong>AutoMenú</strong></p>
+  <p class="muted"><strong>Última actualización:</strong> 14/12/2025</p>
 
-  <h2>1. Responsable</h2>
-  <p>...</p>
+  <nav aria-label="Índice">
+    <a href="index.html">Inicio</a>
+    <a href="#objeto">1. Objeto</a>
+    <a href="#registro">2. Registro</a>
+    <a href="#uso">3. Uso permitido</a>
+    <a href="#contenido">4. Contenido</a>
+    <a href="#ads">5. Publicidad y suscripción</a>
+    <a href="#responsabilidad">6. Responsabilidad</a>
+    <a href="#suspension">7. Suspensión</a>
+    <a href="#modificaciones">8. Modificaciones</a>
+    <a href="#ley">9. Legislación</a>
+  </nav>
 
-  <h2>2. Datos que recopilamos</h2>
-  <p>...</p>
+  <h2 id="objeto">1. Objeto</h2>
+  <p>
+    AutoMenú es una aplicación móvil destinada a la planificación de menús y gestión de recetas de forma personal y privada.
+  </p>
+  <p>El uso de la aplicación implica la aceptación de los presentes Términos y Condiciones.</p>
 
-  <h2>3. Finalidades</h2>
-  <p>...</p>
+  <h2 id="registro">2. Registro de usuarios</h2>
+  <p>Para utilizar determinadas funcionalidades es necesario crear una cuenta.</p>
+  <p>El usuario es responsable de la veracidad de la información proporcionada y del uso de su cuenta.</p>
 
-  <h2>4. Terceros (Firebase, AdMob)</h2>
-  <p>...</p>
+  <h2 id="uso">3. Uso permitido</h2>
+  <p>El usuario se compromete a utilizar la aplicación de forma lícita y adecuada, absteniéndose de:</p>
+  <ul>
+    <li>Subir contenido ilegal, ofensivo o que infrinja derechos de terceros.</li>
+    <li>Intentar acceder a datos de otros usuarios o a sistemas no autorizados.</li>
+    <li>Utilizar la aplicación de forma fraudulenta o abusiva.</li>
+  </ul>
 
-  <h2>5. Conservación</h2>
-  <p>...</p>
+  <h2 id="contenido">4. Contenido del usuario</h2>
+  <p>El usuario es el único responsable del contenido que crea o sube a la aplicación.</p>
+  <p>AutoMenú no revisa ni valida las recetas, imágenes u otros contenidos generados por los usuarios.</p>
+  <p class="note">
+    Actualmente, el contenido del usuario es privado y solo accesible por su propietario. En el futuro podrían habilitarse opciones
+    voluntarias para compartir contenido, lo cual sería informado debidamente.
+  </p>
 
-  <h2>6. Derechos RGPD</h2>
-  <p>...</p>
+  <h2 id="ads">5. Publicidad y suscripción</h2>
+  <p>La aplicación puede mostrar anuncios en su versión gratuita.</p>
+  <p>Existe una suscripción opcional que elimina la publicidad y puede incluir funcionalidades adicionales.</p>
+  <p>Los pagos y la gestión de suscripciones se realizan a través de Google Play. AutoMenú no tiene acceso a los datos de pago del usuario.</p>
 
-  <h2>7. Contacto</h2>
-  <p>...</p>
+  <h2 id="responsabilidad">6. Limitación de responsabilidad</h2>
+  <p>AutoMenú se ofrece “tal cual”. No se garantiza que la aplicación esté libre de errores o interrupciones.</p>
+  <p>
+    El responsable no será responsable de daños derivados del uso indebido de la aplicación, del contenido introducido por el usuario
+    o de interrupciones ajenas al control razonable del servicio.
+  </p>
+
+  <h2 id="suspension">7. Suspensión o cancelación</h2>
+  <p>
+    El responsable se reserva el derecho a suspender o eliminar cuentas que incumplan estos términos o hagan un uso indebido de la aplicación.
+  </p>
+
+  <h2 id="modificaciones">8. Modificaciones</h2>
+  <p>AutoMenú puede modificar estos términos en cualquier momento.</p>
+  <p>Las modificaciones se publicarán en esta misma página.</p>
+
+  <h2 id="ley">9. Legislación aplicable</h2>
+  <p>Estos términos se rigen por la legislación española.</p>
+  <p>Cualquier controversia se someterá a los juzgados y tribunales competentes de España.</p>
+
+  <hr />
+  <p class="muted"><a href="index.html">Volver a Inicio</a></p>
 </body>
 </html>
