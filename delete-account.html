@@ -1,0 +1,114 @@
+<!-- =========================
+     delete-account.html
+     AutoMenú — Eliminación de cuenta y datos
+     ========================= -->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoMenú — Eliminación de cuenta y datos</title>
+  <meta name="robots" content="noindex" />
+  <style>
+    :root { color-scheme: light dark; }
+    body{
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 16px;
+      line-height: 1.6;
+    }
+    header{ margin-bottom: 24px; }
+    h1{ line-height: 1.2; margin: 0 0 8px; }
+    p{ margin: 0 0 12px; }
+    a{
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+    .muted{ color: #666; }
+    .card{
+      border: 1px solid rgba(127,127,127,.35);
+      border-radius: 12px;
+      padding: 16px;
+      margin: 14px 0;
+    }
+    ul{ padding-left: 18px; margin: 8px 0 0; }
+    code{
+      padding: 2px 6px;
+      border-radius: 6px;
+      border: 1px solid rgba(127,127,127,.35);
+    }
+    footer{ margin-top: 28px; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Eliminación de cuenta y datos — AutoMenú</h1>
+    <p class="muted">
+      Aquí puedes solicitar la eliminación de tu cuenta de AutoMenú y los datos asociados.
+    </p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Opción 1 — Desde la aplicación (recomendado)</h2>
+      <p>
+        Si tienes acceso a la app, puedes eliminar tu cuenta directamente desde:
+      </p>
+      <ul>
+        <li><strong>Perfil</strong> → <strong>Eliminar cuenta y datos</strong></li>
+      </ul>
+      <p class="muted">
+        Esta opción elimina tu cuenta de forma inmediata (cuando la confirmas en la app).
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Opción 2 — Por correo electrónico</h2>
+      <p>
+        Si no puedes acceder a la app, puedes solicitar la eliminación de tu cuenta enviando un correo a:
+        <br />
+        <strong><a href="mailto:ayuda.automenu@gmail.com">ayuda.automenu@gmail.com</a></strong>
+      </p>
+      <p>Incluye esta información:</p>
+      <ul>
+        <li>Asunto: <code>Eliminar cuenta AutoMenú</code></li>
+        <li>El correo electrónico con el que te registraste en AutoMenú</li>
+      </ul>
+      <p class="muted">
+        Por seguridad, podremos pedirte una verificación mínima para confirmar que eres el titular de la cuenta.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Qué datos se eliminan</h2>
+      <p>Al eliminar tu cuenta, se elimina o desvincula la información asociada, como:</p>
+      <ul>
+        <li>Tu cuenta (correo electrónico de acceso)</li>
+        <li>Recetas creadas por el usuario</li>
+        <li>Listas de la compra</li>
+        <li>Menú semanal</li>
+        <li>Recetas favoritas</li>
+        <li>Estado premium / plan (si aplica)</li>
+      </ul>
+      <p class="muted">
+        Los registros técnicos de diagnóstico (por ejemplo, informes de fallos) pueden conservarse de forma agregada
+        o durante un tiempo limitado por motivos de seguridad y estabilidad, sin usarse para identificarte de forma directa.
+      </p>
+    </div>
+
+    <p class="muted">
+      Si necesitas más información, consulta la <a href="privacy.html">Política de privacidad</a>.
+    </p>
+  </main>
+
+  <footer class="muted">
+    <p>Última actualización: <span id="d"></span></p>
+  </footer>
+
+  <script>
+    document.getElementById('d').textContent =
+      new Date().toLocaleDateString('es-ES');
+  </script>
+</body>
+</html>
