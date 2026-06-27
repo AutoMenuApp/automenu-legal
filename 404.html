@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abrir receta en AutoMenú</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 520px;
+      margin: 0 auto;
+      padding: 32px 20px;
+      text-align: center;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #555;
+    }
+
+    .button {
+      display: block;
+      margin: 14px auto;
+      padding: 14px 18px;
+      max-width: 280px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      background: #2e7d32;
+      color: white;
+    }
+
+    .secondary {
+      background: #333;
+    }
+
+    .muted {
+      margin-top: 28px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <h1>Abrir receta en AutoMenú</h1>
+
+  <p>
+    Esta receta se puede abrir desde la app AutoMenú.
+    Si ya la tienes instalada, pulsa el botón para abrirla.
+  </p>
+
+  <a class="button" id="openAppButton" href="https://apps.apple.com/us/app/automen%C3%BA/id6757819564">
+    Abrir en la app
+  </a>
+
+  <a class="button secondary" href="https://play.google.com/store/apps/details?id=es.automenu.app">
+    Descargar en Google Play
+  </a>
+
+  <a class="button secondary" href="#">
+    Descargar en App Store
+  </a>
+
+  <p class="muted">
+    Si el botón no abre la app, comprueba que tienes AutoMenú instalada.
+  </p>
+
+  <script>
+    document.getElementById("openAppButton").href = window.location.href;
+  </script>
+</body>
+</html>
