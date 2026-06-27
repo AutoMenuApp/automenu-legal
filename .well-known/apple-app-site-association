@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "2WBJXSNS8V.es.automenu.app",
+        "paths": ["/r/*"]
+      }
+    ]
+  }
+}
