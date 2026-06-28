@@ -12,6 +12,7 @@
       padding: 32px 20px;
       text-align: center;
       color: #222;
+      background: #ffffff;
     }
 
     h1 {
@@ -23,6 +24,22 @@
       font-size: 16px;
       line-height: 1.5;
       color: #555;
+    }
+
+    .info-box {
+      margin: 24px 0;
+      padding: 18px;
+      border-radius: 12px;
+      background: #f4f7f4;
+      text-align: left;
+    }
+
+    .info-box p {
+      margin: 0 0 10px;
+    }
+
+    .info-box p:last-child {
+      margin-bottom: 0;
     }
 
     .button {
@@ -46,34 +63,50 @@
       font-size: 13px;
       color: #777;
     }
+
+    .url-box {
+      word-break: break-all;
+      background: #f1f1f1;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      color: #333;
+      margin-top: 12px;
+    }
   </style>
 </head>
 <body>
   <h1>Abrir receta en AutoMenú</h1>
 
   <p>
-    Esta receta se puede abrir desde la app AutoMenú.
-    Si ya la tienes instalada, pulsa el botón para abrirla.
+    Este enlace contiene una receta para abrir en AutoMenú.
   </p>
 
-  <a class="button" id="openAppButton" href="#">
-    Abrir en la app
-  </a>
+  <div class="info-box">
+    <p>
+      Si ya tienes la app instalada, abre este enlace desde una app como WhatsApp, Notas, Telegram, Instagram o Gmail.
+    </p>
+    <p>
+      Si has llegado aquí desde el navegador, copia el enlace y pégalo en una de esas apps para abrirlo desde ahí.
+    </p>
+  </div>
 
-  <a class="button secondary" href="https://play.google.com/store/apps/details?id=es.automenu.app">
+  <div class="url-box" id="currentUrl"></div>
+
+  <a class="button" href="https://play.google.com/store/apps/details?id=es.automenu.app">
     Descargar en Google Play
   </a>
 
-  <a class="button secondary" href="https://apps.apple.com/us/app/automen%C3%BA/id6757819564">
+  <a class="button secondary" href="https://apps.apple.com/es/app/automenu/id6745255735">
     Descargar en App Store
   </a>
 
   <p class="muted">
-    Si el botón no abre la app, comprueba que tienes AutoMenú instalada.
+    AutoMenú te ayuda a organizar tus recetas, planificar el menú semanal y preparar la lista de la compra.
   </p>
 
   <script>
-    document.getElementById("openAppButton").href = window.location.href;
+    document.getElementById("currentUrl").textContent = window.location.href;
   </script>
 </body>
 </html>
