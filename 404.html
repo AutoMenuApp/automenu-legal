@@ -106,7 +106,11 @@
   </p>
 
   <script>
-    document.getElementById("currentUrl").textContent = window.location.href;
-  </script>
+  const currentUrl = window.location.href;
+  const currentUrlElement = document.getElementById("currentUrl");
+
+  currentUrlElement.textContent = currentUrl;
+  currentUrlElement.href = currentUrl;
+</script>
 </body>
 </html>
